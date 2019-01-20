@@ -21,3 +21,9 @@ print("The energy needed is ",Q)
 
 
 #Edit: I left (mass) in line 13 and had EOF errors, I have not run the program yet as of 1/20 but I will look and debug soon
+#Edit: on 1/20 I ran program, I am getting this error
+$python main.py
+Enter the amount of water in kilograms: Traceback (most recent call last):
+  File "main.py", line 13, in <module>
+    M = float(input("Enter the amount of water in kilograms: "))
+EOFError: EOF when reading a line
