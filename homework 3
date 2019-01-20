@@ -1,0 +1,20 @@
+# Homework 3 for Fall of 2018 Computer Science 101 with Prof. Kahanda
+# write a python program that calculates the energy needed to hear water from an initial temperature to a final temperature and print the result. Your program should prompt th euser to enter the amount of water in kilograms and the initial and final temperature of the water. The formula to computer the energy is: 
+# Q=M*(final temperature - initial temperature) * 4184
+# Where M is the mass of water in kilograms, final and initial temperatures are in degrees Celsius and energy Q is measured in joules. 
+# Sample Run
+# Enter the amount of water in kilograms: 55.5
+# Enter the inital temperature in Celsius: 3.5
+# Enter the final temperature in Celsius: 10.5
+# The Energy needed is 1625484.0 joules
+# OK Time to begin Homework Assigment
+# Prompt the user for water in kilograms (because we can assume that no one will use exact units, we will use floats)
+
+M = float(input("Enter the amount of water (mass) in kilograms: "))
+# Prompt the user for initial temperature
+initialTemp = float(input("Enter the inital temperature in Celsius: "))
+# Prompt the user for a final temperature
+finalTemp = float(input("Enter the final temperature in Celsius: "))
+# OK now it's time to make the calculations for how much energy we need to heat water from an inital temperature to the final
+Q=M*(finalTemp-initialTemp) * 4184
+print("The energy needed is ",Q)
