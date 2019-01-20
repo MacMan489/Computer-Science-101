@@ -10,7 +10,7 @@
 # OK Time to begin Homework Assigment
 # Prompt the user for water in kilograms (because we can assume that no one will use exact units, we will use floats)
 
-M = float(input("Enter the amount of water (mass) in kilograms: "))
+M = float(input("Enter the amount of water in kilograms: "))
 # Prompt the user for initial temperature
 initialTemp = float(input("Enter the inital temperature in Celsius: "))
 # Prompt the user for a final temperature
@@ -18,3 +18,6 @@ finalTemp = float(input("Enter the final temperature in Celsius: "))
 # OK now it's time to make the calculations for how much energy we need to heat water from an inital temperature to the final
 Q=M*(finalTemp-initialTemp) * 4184
 print("The energy needed is ",Q)
+
+
+#Edit: I left (mass) in line 13 and had EOF errors, I have not run the program yet as of 1/20 but I will look and debug soon
