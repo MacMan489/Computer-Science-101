@@ -27,3 +27,4 @@ Enter the amount of water in kilograms: Traceback (most recent call last):
   File "main.py", line 13, in <module>
     M = float(input("Enter the amount of water in kilograms: "))
 EOFError: EOF when reading a line
+# Edit: I realized I was running on a compiler that was giving false errors
