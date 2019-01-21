@@ -1,1 +1,14 @@
+# Homework 5 for Professor Kahanda at Rutgers, Fall of 2018
+def falling_distance(time):
+    distance = 0.5 * 9.8 * (time ^ 2)
+    print("Distance that the object has fallen during this time interval = %.2f meters" %distance)
 
+def main():
+
+    time = int(input("Enter the time duration: "))
+    falling_distance(time)
+
+if __name__ == "__main__":
+
+    main()
+#tested on https://www.onlinegdb.com/online_python_compiler
