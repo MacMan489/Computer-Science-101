@@ -1,1 +1,36 @@
+#list of correct answers
+Answers=['A','C','A','A','D','B','C','A','C','B','A','D','C','A','D','C','B','B','D','A']
 
+#reads student's answer from the text file
+studentFile=open("student.txt",'r')
+
+#stores the student's mark in list
+studentAnswers=studentFile.read().split(",")
+k=0
+x=0
+
+wrongAnswers=[] #list for student's wrong Answers
+crctAnswers=[] #list for student's correct Answers
+
+while(x<20):
+
+   #compares the student's answers with correct answers
+   if studentAnswers[x]==Answers[x]:
+       k=k+1
+       #appends number of correct answers to the list
+       crctAnswers.append(x+1)
+   else:
+       #appends number of wrong answers to the list
+       wrongAnswers.append(x+1)
+   x=x+1
+
+print("The Answers are :"+str(Answers)) #prints the correct answers
+print("The Student's Answers are :"+str(studentAnswers)) #prints student's answers
+print("The Correct Answers are "+str(k)+" :"+str(crctAnswers)) #prints student's correct Answers with count
+print("The Wrong answers are "+str(20-k)+" :"+str(wrongAnswers)) #prints student's wrong Answers with count
+
+#checks whether student is passed or failed in the exam
+if(k<15):
+   print("Student is failed in driver's license exam")
+else:
+   print("Student is passed in driver's license exam")
