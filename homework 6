@@ -1,6 +1,28 @@
 #list of correct answers
 Answers=['A','C','A','A','D','B','C','A','C','B','A','D','C','A','D','C','B','B','D','A']
 
+print("Enter Answers")
+RAnswers=[]
+i=0
+while i<20:
+   #read answers from student to list
+   RAnswers.append(input())
+   i=i+1
+
+
+#writing list into a file
+file=open("student.txt","w+")
+file.truncate(0)
+k=0
+while k<20:
+   if k==19:
+       file.write(str(RAnswers[k]))
+       k=k+1
+   else:
+       file.write(str(RAnswers[k])+",")
+       k=k+1
+file.close()
+
 #reads student's answer from the text file
 studentFile=open("student.txt",'r')
 
@@ -8,7 +30,6 @@ studentFile=open("student.txt",'r')
 studentAnswers=studentFile.read().split(",")
 k=0
 x=0
-
 wrongAnswers=[] #list for student's wrong Answers
 crctAnswers=[] #list for student's correct Answers
 
